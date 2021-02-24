@@ -12,17 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BabyAlex.UI.ViewModel;
 
-namespace BabyAlex
+namespace BabyAlex.UI.View
 {
   /// <summary>
   /// Interaction logic for MainWindow.xaml
   /// </summary>
   public partial class MainWindow : Window
   {
-    public MainWindow()
+    private MainViewModel _viewModel;
+
+    public MainWindow(MainViewModel viewModel)
     {
       InitializeComponent();
+      this.Loaded += MainWindow_Loaded;
+
+      _viewModel = viewModel;
+      DataContext = _viewModel;
     }
+
+    private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+    {
+      _viewModel.Load();
+    }
+
   }
 }

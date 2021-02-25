@@ -23,11 +23,22 @@
 
         <!--Header-->
         <TextBlock Margin="10" Foreground="White" FontSize="40" Grid.ColumnSpan="3">
-                <Bold Foreground="LightSeaGreen">Hello</Bold>Storage
+                <Bold Foreground="LightSeaGreen">Hi, Alex</Bold>Storage
         </TextBlock>
 
+        <!--Buttons-->
+        <StackPanel Background="#333333" Grid.Row="1" Orientation="Horizontal">
+            <Button Command="{Binding AddFriendCommand}" 
+                ToolTip="Add friend" Style="{StaticResource AddButtonStyle}" />
+        </StackPanel>
+
+        <StackPanel Background="Lavender"  Grid.Row="2" Orientation="Horizontal">
+            <Button Command="{Binding AddFriendCommand}" 
+                ToolTip="Add friend" Style="{StaticResource AddButtonStyle}" />
+        </StackPanel>
+
         <!--Footer-->
-        <TextBlock Text="Created by Jian Yuan, 2021" Margin="10" Grid.Row="3" Grid.ColumnSpan="3" Foreground="LightGray" />
+        <TextBlock Text="Created by Jian Yuan, 2021" Margin="10" Grid.Row="3" Grid.ColumnSpan="3" Foreground="Gray" />
 
     </Grid>
 </Window>

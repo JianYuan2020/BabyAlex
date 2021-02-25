@@ -23,12 +23,12 @@ namespace BabyAlex.UI.View
   {
     private MainViewModel _viewModel;
 
-    public MainWindow(MainViewModel viewModel)
+    public MainWindow(/*MainViewModel viewModel*/)
     {
       InitializeComponent();
       this.Loaded += MainWindow_Loaded;
 
-      _viewModel = viewModel;
+      _viewModel = new MainViewModel();
       DataContext = _viewModel;
     }
 

@@ -3,10 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BabyAlex"
+        xmlns:view="clr-namespace:BabyAlex.UI.View"
         mc:Ignorable="d"
-        Title="BabyAlex - Main" Height="450" Width="800">
+        Title="BabyAlex - Main" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+        <TextBlock Margin="10" Foreground="White" FontSize="40" Grid.ColumnSpan="3">
+                <Bold Foreground="LightSeaGreen">Hello</Bold>Storage
+        </TextBlock>
+
+        <!--Footer-->
+        <TextBlock Text="Created by Jian Yuan, 2021" Margin="10" Grid.Row="3" Grid.ColumnSpan="3" Foreground="LightGray" />
+
     </Grid>
 </Window>

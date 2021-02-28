@@ -8,7 +8,7 @@
         Title="BabyAlex - Main" Height="450" Width="800"
         WindowStartupLocation="CenterScreen">
 
-    <Grid>
+    <Grid HorizontalAlignment="Left">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="Auto"/>
@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
 
         <!--Header-->
-        <TextBlock Margin="10" Foreground="White" FontSize="40" Grid.ColumnSpan="3" FontFamily="Comic Sans MS">
+        <TextBlock Margin="10" Foreground="White" FontSize="40" Grid.ColumnSpan="3" FontFamily="Comic Sans MS" HorizontalAlignment="Center">
             <Bold Foreground="LightSeaGreen">Good Morning, Alex</Bold>
         </TextBlock>
 

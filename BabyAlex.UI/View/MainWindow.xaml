@@ -22,8 +22,8 @@
         </Grid.RowDefinitions>
 
         <!--Header-->
-        <TextBlock Margin="10" Foreground="White" FontSize="40" Grid.ColumnSpan="3">
-                <Bold Foreground="LightSeaGreen">Hi, Alex</Bold>Storage
+        <TextBlock Margin="10" Foreground="White" FontSize="40" Grid.ColumnSpan="3" FontFamily="Comic Sans MS">
+            <Bold Foreground="LightSeaGreen">Good Morning, Alex</Bold>
         </TextBlock>
 
         <!--Buttons-->

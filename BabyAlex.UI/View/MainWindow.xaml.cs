@@ -34,6 +34,7 @@ namespace BabyAlex.UI.View
 
     private void MainWindow_Loaded(object sender, RoutedEventArgs e)
     {
+      //_greetingText.Text = "Good Morning, Baby Alex";
       _viewModel.Load();
     }
 

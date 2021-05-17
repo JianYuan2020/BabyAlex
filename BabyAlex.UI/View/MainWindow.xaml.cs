@@ -28,13 +28,12 @@ namespace BabyAlex.UI.View
       InitializeComponent();
       this.Loaded += MainWindow_Loaded;
 
-      _viewModel = new MainViewModel();
+      _viewModel = new MainViewModel("Good Morning, Baby Alex");
       DataContext = _viewModel;
     }
 
     private void MainWindow_Loaded(object sender, RoutedEventArgs e)
     {
-      //_greetingText.Text = "Good Morning, Baby Alex";
       _viewModel.Load();
     }
 
